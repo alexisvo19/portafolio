@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Contacto</title>
+    <link rel="stylesheet" href="../css/contacto-style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Mi logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-header">
+            <h2>HABLA CONMIGO</h2>
+            <p>Me encantaría saber de usted si tiene alguna pregunta sobre lo que hago o si desea hablar conmigo sobre
+                cómo trabajar con usted en cualquier área que visualiza en mi portafolio.</p>
+        </section>
+
+        <section class="formulario-container">
+            <div class="contact-info">
+                <img src="../img/send.png" alt="sin importancia">
+                <div class="info-details">
+                    <div>
+                        <h4>TELEFONO</h4>
+                        <p>+51 908 546 854</p>
+                    </div>
+                    <div>
+                        <h4>EMAIL</h4>
+                        <p>alexisvillagraotazu@gmail.com</p>
+                    </div>
+                    <div class="social-media">
+                        <h4>REDES SOCIALES</h4>
+                        <a href="https://www.facebook.com/profile.php?id=61580598801625"><img src="../img/facebook.png" alt="Facebook"></a>
+                        <a href="https://x.com/EmperorAqp"><img src="../img/x.png" alt="X"></a>
+                        <a href="https://www.linkedin.com/in/company-emperor-288273384/"><img src="../img/linkedin.png" alt="LinkedIn"></a>
+                        <a href="https://www.instagram.com/emperor_aqp/"><img src="../img/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/mdkwzelo"
+                method="POST">  
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombres y Apellidos:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit">SEND</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js"></script>
+
+    <script src="../js/script.js" type="module"></script>
+</body>
+
+</html>
